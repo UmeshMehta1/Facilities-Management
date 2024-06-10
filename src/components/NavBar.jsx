@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,12 +14,12 @@ function NavBar() {
       <header className="flex flex-wrap items-center px-4 py-4 bg-black shadow-md lg:px-16">
         {/* mobile */}
         <div className="flex items-center justify-between flex-1">
-          <a href="#" className="text-xl">
+          <Link to="/" className="text-xl">
             Company
-          </a>
+          </Link>
         </div>
 
-        <label for="menu-toggle" className="block pointer-cursor md:hidden">
+        <label htmlFor="menu-toggle" className="block pointer-cursor md:hidden">
           <button className="" onClick={toggle}>
             <svg
               className="text-white fill-current"
@@ -33,26 +34,29 @@ function NavBar() {
           </button>
 
           {isMenuOpen ? (
-            <ul className="flex-col pt-4 text-base text-white ">
+            <ul className="flex-col pt-4 text-base text-white">
               <li>
-                <a className="block px-0 py-3 md:p-4" href="#">
-                  AboutUs
-                </a>
+                <Link className="block px-0 py-3 md:p-4" to="/about">
+                  About Us
+                </Link>
               </li>
               <li>
-                <a className="block px-0 py-3 md:p-4" href="#">
+                <Link className="block px-0 py-3 md:p-4" to="/contact">
                   Treatments
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="block px-0 py-3 md:p-4" href="#">
+                <Link className="block px-0 py-3 md:p-4" to="/blog">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="block px-0 py-3 mb-2 md:p-4 md:mb-0" href="#">
+                <Link
+                  className="block px-0 py-3 mb-2 md:p-4 md:mb-0"
+                  to="/contact"
+                >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           ) : null}
@@ -68,30 +72,30 @@ function NavBar() {
           <nav>
             <ul className="items-center justify-between pt-4 text-base text-white md:flex md:pt-0">
               <li>
-                <a className="block px-0 py-3 md:p-4" href="#">
+                <Link className="block px-0 py-3 md:p-4" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="block px-0 py-3 md:p-4" href="#">
-                  AboutUs
-                </a>
+                <Link className="block px-0 py-3 md:p-4" to="/about">
+                  About Us
+                </Link>
               </li>
-
               <li>
-                <a className="block px-0 py-3 md:p-4" href="#">
+                <Link className="block px-0 py-3 md:p-4" to="/blog">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="block px-0 py-3 mb-2 md:p-4 md:mb-0" href="#">
+                <Link
+                  className="block px-0 py-3 mb-2 md:p-4 md:mb-0"
+                  to="/contact"
+                >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
-
-          {/* mobile Menu */}
         </div>
       </header>
     </>
