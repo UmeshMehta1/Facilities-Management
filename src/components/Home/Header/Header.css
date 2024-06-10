@@ -1,0 +1,29 @@
+/* Add this to your main CSS file if you want custom global styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.hero {
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+
+/* Header.css */
+@media (orientation: landscape) {
+  .hero {
+    height: 80vh; /* Adjust height for landscape orientation */
+  }
+
+  .content h1 {
+    font-size: 2.5rem; /* Adjust font size for landscape orientation */
+  }
+
+  .content p {
+    font-size: 1.125rem; /* Adjust font size for landscape orientation */
+  }
+}
