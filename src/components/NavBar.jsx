@@ -9,12 +9,12 @@ function NavBar() {
   };
 
   return (
-    <nav className="sticky top-0 z-30 bg-white border-gray-200  dark:bg-gray-900">
+    <nav className="sticky top-0 z-30 bg-white border-gray-200 dark:bg-gray-900">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
+            src="https://www.shutterstock.com/image-vector/management-icon-teamwork-business-team-260nw-1051689107.jpg"
+            className="h-8 rounded"
             alt="Facilities"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
