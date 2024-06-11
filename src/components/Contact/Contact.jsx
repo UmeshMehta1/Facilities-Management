@@ -3,124 +3,188 @@ import React from "react";
 function Contact() {
   return (
     <>
-      <div class="bg-gray-50 dark:bg-gray-900" id="contact">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
-          <h2 class="text-4xl font-bold dark:text-gray-100">Contact</h2>
-          <p class="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-gray-400">
-            Want to contact us? Choose an option below and well be happy to show
-            you how we can transform companys web experience.
-          </p>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
-          <div>
-            <h2 class="text-lg font-bold dark:text-gray-100">Contact Us</h2>
-            <p class="max-w-sm mt-4 mb-4 dark:text-gray-400">
-              Have something to say? We are here to help. Fill up the form or
-              send email or call phone.
-            </p>
-            <div class="flex items-center mt-8 space-x-2 text-dark-600 dark:text-gray-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
-                ></path>
-              </svg>
-              <span>14th avenue glory road</span>
-            </div>
-            <div class="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                ></path>
-              </svg>
-              <a href="mailto:hello@company.com">hello@company.com</a>
-            </div>
-            <div class="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                class="w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                ></path>
-              </svg>
-              <a href="tel:11111111111">+51 11111111111</a>
+      <section class="bg-blue-50 dark:bg-slate-600" id="contact">
+        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div class="mb-4">
+            <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
+              <p class="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200">
+                Contact
+              </p>
+              <h2 class="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
+                Get in Touch
+              </h2>
+              <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
+                In hac habitasse platea dictumst
+              </p>
             </div>
           </div>
-          <div>
-            <form>
-              <input
-                type="checkbox"
-                id=""
-                class="hidden"
-                style="display:none"
-                name="botcheck"
-              />
-              <div class="mb-5">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  autocomplete="false"
-                  class="w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-                  name="name"
-                />
+          <div class="flex items-stretch justify-center">
+            <div class="grid md:grid-cols-2">
+              <div class="h-full pr-6">
+                <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut
+                  scelerisque sagittis ante, ac tincidunt sem venenatis ut.
+                </p>
+                <ul class="mb-6 md:mb-0">
+                  <li class="flex">
+                    <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="h-6 w-6"
+                      >
+                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                      </svg>
+                    </div>
+                    <div class="ml-4 mb-4">
+                      <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                        Our Address
+                      </h3>
+                      <p class="text-gray-600 dark:text-slate-400">
+                        1230 Maecenas Street Donec Road
+                      </p>
+                      <p class="text-gray-600 dark:text-slate-400">
+                        New York, EEUU
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex">
+                    <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="h-6 w-6"
+                      >
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                        <path d="M15 7a2 2 0 0 1 2 2"></path>
+                        <path d="M15 3a6 6 0 0 1 6 6"></path>
+                      </svg>
+                    </div>
+                    <div class="ml-4 mb-4">
+                      <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                        Contact
+                      </h3>
+                      <p class="text-gray-600 dark:text-slate-400">
+                        Mobile: +1 (123) 456-7890
+                      </p>
+                      <p class="text-gray-600 dark:text-slate-400">
+                        Mail: tailnext@gmail.com
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex">
+                    <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="h-6 w-6"
+                      >
+                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                        <path d="M12 7v5l3 3"></path>
+                      </svg>
+                    </div>
+                    <div class="ml-4 mb-4">
+                      <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                        Working hours
+                      </h3>
+                      <p class="text-gray-600 dark:text-slate-400">
+                        Monday - Friday: 08:00 - 17:00
+                      </p>
+                      <p class="text-gray-600 dark:text-slate-400">
+                        Saturday &amp; Sunday: 08:00 - 12:00
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <div class="mb-5">
-                <label for="email_address" class="sr-only">
-                  Email Address
-                </label>
-                <input
-                  id="email_address"
-                  type="email"
-                  placeholder="Email Address"
-                  autocomplete="false"
-                  class="w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-                  name="email"
-                />
+              <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
+                <h2 class="mb-4 text-2xl font-bold dark:text-white">
+                  Ready to Get Started?
+                </h2>
+                <form id="contactForm">
+                  <div class="mb-6">
+                    <div class="mx-0 mb-1 sm:mb-4">
+                      <div class="mx-0 mb-1 sm:mb-4">
+                        <label
+                          for="name"
+                          class="pb-1 text-xs uppercase tracking-wider"
+                        ></label>
+                        <input
+                          type="text"
+                          id="name"
+                          autocomplete="given-name"
+                          placeholder="Your name"
+                          class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                          name="name"
+                        />
+                      </div>
+                      <div class="mx-0 mb-1 sm:mb-4">
+                        <label
+                          for="email"
+                          class="pb-1 text-xs uppercase tracking-wider"
+                        ></label>
+                        <input
+                          type="email"
+                          id="email"
+                          autocomplete="email"
+                          placeholder="Your email address"
+                          class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                          name="email"
+                        />
+                      </div>
+                    </div>
+                    <div class="mx-0 mb-1 sm:mb-4">
+                      <label
+                        for="textarea"
+                        class="pb-1 text-xs uppercase tracking-wider"
+                      ></label>
+                      <textarea
+                        id="textarea"
+                        name="textarea"
+                        cols="30"
+                        rows="5"
+                        placeholder="Write your message..."
+                        class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      type="submit"
+                      class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div class="mb-3">
-                <textarea
-                  placeholder="Your Message"
-                  class="w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-                  name="message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full py-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
-              >
-                Send Message
-              </button>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

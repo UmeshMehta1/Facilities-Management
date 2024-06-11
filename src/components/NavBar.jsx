@@ -4,101 +4,99 @@ import { Link } from "react-router-dom";
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggle = () => {
+  const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  console.log(isMenuOpen);
   return (
-    <>
-      <header className="flex flex-wrap items-center px-4 py-4 bg-black shadow-md lg:px-16">
-        {/* mobile */}
-        <div className="flex items-center justify-between flex-1">
-          <Link to="/" className="text-xl">
-            Company
-          </Link>
-        </div>
-
-        <label htmlFor="menu-toggle" className="block pointer-cursor md:hidden">
-          <button className="" onClick={toggle}>
+    <nav className="sticky top-0 z-30 bg-white border-gray-200  dark:bg-gray-900">
+      <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
+        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            className="h-8"
+            alt="Facilities"
+          />
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            Facilities
+          </span>
+        </a>
+        <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            className="px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            BOOK CONSULTATION
+          </button>
+          <button
+            type="button"
+            className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded={isMenuOpen}
+            onClick={toggleMenu}
+          >
+            <span className="sr-only">Open main menu</span>
             <svg
-              className="text-white fill-current"
+              className="w-5 h-5"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
+              fill="none"
+              viewBox="0 0 17 14"
             >
-              <title>menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
             </svg>
           </button>
-
-          {isMenuOpen ? (
-            <ul className="flex-col pt-4 text-base text-white">
-              <li>
-                <Link className="block px-0 py-3 md:p-4" to="/about">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link className="block px-0 py-3 md:p-4" to="/contact">
-                  Treatments
-                </Link>
-              </li>
-              <li>
-                <Link className="block px-0 py-3 md:p-4" to="/blog">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="block px-0 py-3 mb-2 md:p-4 md:mb-0"
-                  to="/contact"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          ) : null}
-        </label>
-
-        {/* desktop */}
-        <input className="hidden" type="checkbox" id="menu-toggle" />
-
-        <div
-          className="hidden w-full md:flex md:items-center md:w-auto"
-          id="menu"
-        >
-          <nav>
-            <ul className="items-center justify-between pt-4 text-base text-white md:flex md:pt-0">
-              <li>
-                <Link className="block px-0 py-3 md:p-4" to="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link className="block px-0 py-3 md:p-4" to="/about">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link className="block px-0 py-3 md:p-4" to="/blog">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="block px-0 py-3 mb-2 md:p-4 md:mb-0"
-                  to="/contact"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </nav>
         </div>
-      </header>
-    </>
+        <div
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
+            isMenuOpen ? "" : "hidden"
+          }`}
+          id="navbar-cta"
+        >
+          <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a
+                href="#"
+                className="block px-3 py-2 text-white bg-blue-700 rounded md:p-0 md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                aria-current="page"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <Link
+                to="about"
+                className="block px-3 py-2 text-gray-900 rounded md:p-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blogs"
+                className="block px-3 py-2 text-gray-900 rounded md:p-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="contact"
+                className="block px-3 py-2 text-gray-900 rounded md:p-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 

@@ -44,7 +44,7 @@ function Footer() {
                         font-weight="bold"
                       >
                         <tspan x="654" y="518">
-                          Tailwindow
+                          Facilities Management
                         </tspan>
                       </text>
                     </g>
@@ -52,9 +52,9 @@ function Footer() {
                 </svg>
               </a>
               <p class="text-justify">
-                Tailwindow is a collection of UI Components created using
-                Tailwind CSS Framework. The UI Components gives you all of the
-                building blocks you need to build any designs without any
+                Facilities Management is a collection of UI Components created
+                using Facilities Management The UI Components gives you all of
+                the building blocks you need to build any designs without any
                 annoying opinionated styles you have to fight to override.
               </p>
             </div>

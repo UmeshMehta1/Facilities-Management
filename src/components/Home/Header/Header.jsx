@@ -2,6 +2,7 @@ import React from "react";
 import ImgHero from "../../image/hero.png";
 import "tailwindcss/tailwind.css";
 import "./Header.css";
+
 function Header() {
   return (
     <>
@@ -22,7 +23,7 @@ function Header() {
             </p>
             <a
               href="#"
-              className="px-6 py-3 text-lg text-white transition-all duration-300 bg-purple-600 rounded-lg hover:bg-purple-700"
+              className="px-6 py-3 text-lg text-white transition-all duration-300 bg-gray-900 rounded-lg hover:bg-gray-700"
             >
               Free Consultation
             </a>
